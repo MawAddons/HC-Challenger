@@ -1,0 +1,12 @@
+## Interface: 11200
+## Title: |cffb8c0ccHC|r |cffa335eeChallenger|r
+## Notes: Build, play and share manual leveling routes for server challenges.
+## Author: HC Safety Suite
+## Version: 0.1.0
+## SavedVariables: HCChallengerDB
+
+Challenges.lua
+Core.lua
+Network.lua
+Guide.lua
+UI.lua
