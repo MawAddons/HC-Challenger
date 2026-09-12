@@ -1,10 +1,12 @@
-# HC Challenger 0.1.0
+# HC Challenger 0.1.1
 
 HC Challenger er en manuel route-builder og guide-afspiller til WoW 1.12.1. Spillere kan bygge egne leveling-ruter trin for trin, gemme dem, afspille dem i et kompakt guidevindue og frivilligt dele dem via suitens skjulte `HCSafety`-kanal.
 
 ## Installation
 
 Kopier mappen `HC-Challenger` til `World of Warcraft\Interface\AddOns\HC-Challenger`. Addon'et bruger kun `HCChallengerDB` og kræver ingen af de andre HC-addons.
+
+Et flytbart route-note-ikon ved minimappet åbner/lukker Challenger. Træk ikonet for at flytte det; `/hcc minimap` skjuler eller viser det.
 
 ## Route-builder
 

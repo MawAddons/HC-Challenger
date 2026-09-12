@@ -1,7 +1,7 @@
 HCChallenger = {}
 local HC=HCChallenger
 
-HC.VERSION="0.1.0"
+HC.VERSION="0.1.1"
 HC.NAME="HC Challenger"
 HC.COLORED_NAME="|cffb8c0ccHC|r |cffa335eeChallenger|r"
 HC.MODULE="CHL"
