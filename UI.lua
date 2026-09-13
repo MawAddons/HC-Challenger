@@ -13,8 +13,8 @@ local function Panel(parent)local p=CreateFrame("Frame",nil,parent);p:SetBackdro
 function HC:SetMinimapAngle(angle)if self.Frames.minimap then self.Frames.minimap:ClearAllPoints();self.Frames.minimap:SetPoint("CENTER",Minimap,"CENTER",math.cos(angle or-.2)*80,math.sin(angle or-.2)*80)end end
 function HC:CreateMinimapButton()
  local b=CreateFrame("Button","HCChallengerMinimapButton",Minimap);b:SetWidth(31);b:SetHeight(31);b:SetFrameStrata("MEDIUM");b:SetFrameLevel(Minimap:GetFrameLevel()+8);b:RegisterForClicks("LeftButtonUp");b:RegisterForDrag("LeftButton")
- local bg=b:CreateTexture(nil,"BACKGROUND");bg:SetTexture("Interface\\Minimap\\UI-Minimap-Background");bg:SetWidth(24);bg:SetHeight(24);bg:SetPoint("CENTER")
- local icon=b:CreateTexture(nil,"ARTWORK");icon:SetTexture("Interface\\Icons\\INV_Misc_Note_01");icon:SetWidth(20);icon:SetHeight(20);icon:SetPoint("CENTER");icon:SetTexCoord(.08,.92,.08,.92)
+ local bg=b:CreateTexture(nil,"BACKGROUND");bg:SetTexture("Interface\\Minimap\\UI-Minimap-Background");bg:SetWidth(24);bg:SetHeight(24);bg:SetPoint("CENTER",b,"CENTER",0,0)
+ local icon=b:CreateTexture(nil,"ARTWORK");icon:SetTexture("Interface\\Icons\\INV_Misc_Note_01");icon:SetWidth(20);icon:SetHeight(20);icon:SetPoint("CENTER",b,"CENTER",0,0);icon:SetTexCoord(.08,.92,.08,.92)
  local border=b:CreateTexture(nil,"OVERLAY");border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder");border:SetWidth(52);border:SetHeight(52);border:SetPoint("CENTER",b,"CENTER",10,-9)
  b:SetScript("OnClick",function()if this.wasDragged then this.wasDragged=nil else HC:Toggle()end end);b:SetScript("OnDragStart",function()this.dragging=1 end);b:SetScript("OnDragStop",function()if this.dragging then this.dragging=nil;this.wasDragged=1 end end)
  b:SetScript("OnUpdate",function()if this.dragging and HC.DB then local s=Minimap:GetEffectiveScale();local x,y=GetCursorPosition();x=x/s;y=y/s;local cx,cy=Minimap:GetCenter();HC.DB.settings.minimapAngle=math.atan2(y-cy,x-cx);HC:SetMinimapAngle(HC.DB.settings.minimapAngle)end end)

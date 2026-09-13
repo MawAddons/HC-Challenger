@@ -1,4 +1,4 @@
-# HC Challenger 0.1.1
+# HC Challenger 0.1.2
 
 HC Challenger er en manuel route-builder og guide-afspiller til WoW 1.12.1. Spillere kan bygge egne leveling-ruter trin for trin, gemme dem, afspille dem i et kompakt guidevindue og frivilligt dele dem via suitens skjulte `HCSafety`-kanal.
 
