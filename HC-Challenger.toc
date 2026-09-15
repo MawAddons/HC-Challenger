@@ -1,6 +1,6 @@
 ## Interface: 11200
 ## Title: |cffb8c0ccHC|r |cffa335eeChallenger|r
-## Notes: Build, play and share manual leveling routes for server challenges.
+## Notes: v0.1.2: plan your next adventure, then share the route with a friend
 ## Author: HC Safety Suite
 ## Version: 0.1.2
 ## SavedVariables: HCChallengerDB
